@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LuaInside example template</title>
+</head>
+<body>
+<h1><%= "This template prints Hello world 100 times." %></h1>
+<!-- we can embed Lua flow-controlling structures inside inside templates. -->
+<% for i = 1, 256 do %><p>
+Hello <%= your_name or "world" %>!
+</p><% end %>
+</body>
+</html>
